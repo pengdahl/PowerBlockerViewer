@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Target the latest .NET Windows Desktop framework -->
+    <TargetFramework>net8.0-windows</TargetFramework>
+    
+    <!-- We are building a Windows Forms Application -->
+    <OutputType>WinExe</OutputType>
+    
+    <!-- Enable Windows Forms support -->
+    <UseWindowsForms>true</UseWindowsForms>
+    
+    <!-- Application Settings -->
+    <StartupObject>PowerBlockerViewer.MainForm</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest> <!-- Links to the manifest below -->
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>PowerBlockerViewer</AssemblyName>
+  </PropertyGroup>
+
+  <!-- 
+    Note: System.Diagnostics.Process is included in the base .NET runtime. 
+    No additional NuGet packages are required for this specific tool.
+  -->
+</Project>
